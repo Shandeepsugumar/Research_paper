@@ -1,0 +1,58 @@
+name: emotion_recognition_app
+description: A professional emotion recognition app using multimodal signals
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  # TFLite for ML model inference
+  tflite_flutter: ^0.10.4
+  tflite_flutter_helper: ^0.3.1
+
+  # Audio recording and processing
+  record: ^5.0.4
+  permission_handler: ^11.0.1
+  path_provider: ^2.1.1
+
+  # Google Fit integration
+  health: ^10.0.0
+
+  # UI and state management
+  provider: ^6.1.1
+  fl_chart: ^0.66.0
+
+  # Utils
+  intl: ^0.19.0
+  logger: ^2.0.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.13.1
+  flutter_launcher_name: ^0.0.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#4A90E2"
+  adaptive_icon_foreground: "assets/icon/icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/ser_cpu_rnn_model.tflite
+    - assets/models/HER_emotion_model_custom.tflite
+    - assets/models/fusion_model.tflite

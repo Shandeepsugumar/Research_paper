@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Emotion Recognition</string>
+    <string name="google_fitness_api_key">522512286409-e1msqhisbo1ep47lqvug6b948i528pgp.apps.googleusercontent.com</string>
+</resources>
